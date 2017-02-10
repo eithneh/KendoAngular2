@@ -1,0 +1,89 @@
+// TODO: extract or remove modal variables
+$modal-title-padding: 1em !default;
+$modal-title-line-height: 1.2em !default;
+$modal-inner-padding: $modal-title-padding !default;
+
+@import '../button/layout';
+@import '../action-buttons/layout';
+
+@include exports('dialog/layout') {
+
+    .k-dialog {
+        padding-top: 0;
+        min-width: 450px;
+        max-width: 100%;
+        max-height: 98vh;
+        position: fixed;
+        border-width: 0;
+    }
+
+    // Title bar
+    .k-dialog .k-window-titlebar {
+        flex-shrink: 0;
+    }
+
+    .k-dialog .k-dialog-title {
+        margin: 0;
+        line-height: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        cursor: default;
+    }
+
+    // Actions
+    .k-dialog-action {
+        color: inherit;
+        text-decoration: none;
+        opacity: .2;
+        line-height: 1;
+
+        &:hover,
+        &.k-state-hover {
+            color: inherit;
+            text-decoration: none;
+            opacity: .5;
+        }
+    }
+
+    // Content
+    .k-dialog .k-content {
+        padding: $modal-inner-padding;
+        outline: 0;
+        overflow: auto;
+        position: relative;
+    }
+
+    // Buttons
+    .k-dialog-buttongroup {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+
+        .k-button {
+            // sass-lint:disable no-important
+            width: auto !important;
+            // sass-lint:enable no-important
+            white-space: normal;
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            line-height: 1;
+            padding: $padding-x * 2;
+            border-radius: 0;
+            border-width: 1px 0 0;
+
+            &:not(:last-child) {
+                border-right-width: 1px;
+            }
+        }
+    }
+    .k-dialog-button-layout-stretched {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .k-window-content {
+        overflow: hidden;
+    }
+}

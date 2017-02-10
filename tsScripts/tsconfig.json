@@ -1,0 +1,23 @@
+﻿{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "noResolve": false,
+    "outDir": "../Scripts/",
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "moduleResolution": "node"
+
+  },
+  "exclude": [
+    "node_modules",
+    "libs",
+    "typings/index",
+    "typings/index.d.ts",
+    "typings"
+  ]
+}

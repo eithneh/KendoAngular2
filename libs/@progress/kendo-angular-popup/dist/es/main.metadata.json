@@ -1,0 +1,1 @@
+{"__symbolic":"module","version":1,"metadata":{},"exports":[{"from":"@progress/kendo-popup-common","export":[{"name":"AlignStrategy","as":"Align"},{"name":"CollisionStrategy","as":"Collision"},{"name":"OffsetPosition","as":"Offset"}]},{"from":"./popup.component","export":["PopupComponent"]},{"from":"./popup.module","export":["PopupModule"]}]}

@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "name": "aspnet",
+  "private": true,
+  "scripts": {
+    "postinstall": "typings install",
+    "typings": "typings"
+  },
+  "dependencies": {
+    "@angular/common": "^2.3.1",
+    "@angular/compiler": "^2.3.1",
+    "@angular/core": "^2.3.1",
+    "@angular/forms": "^2.3.1",
+    "@angular/http": "^2.3.1",
+    "@angular/platform-browser": "^2.3.1",
+    "@angular/platform-browser-dynamic": "^2.3.1",
+    "@angular/router": "3.0.0",
+    "@angular/upgrade": "2.3.1",
+
+    "angular2-in-memory-web-api": "0.0.20",
+
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.27",
+    "zone.js": "^0.6.23",
+
+    "@progress/kendo-angular-buttons": "^0.18.1",
+    "@progress/kendo-theme-default": "^2.11.20"
+
+  },
+  "devDependencies": {
+    "typescript": "~2.0.3",
+    "typings": "2.1.0",
+    "gulp": "3.9.1",
+    "path": "^0.12.7",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-typescript": "^2.13.6",
+    "gulp-tsc": "^1.2.0"
+  }
+}
